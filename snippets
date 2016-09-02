@@ -20,38 +20,16 @@
 			"",
 			"var React = require('react');",
 			"",
-			"module.exports = "
-		],
-		"description": "JS file init"
-	},
-	"Create export var": {
-		"prefix": "exvar",
-		"body":[
 			"var ${var_name} = React.createClass({",
 			"",
-			"});",{
-/*
-	 // Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and 
-	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
-	 // Example:
-	 "Print to console": {
-		"prefix": "log",
-		"body": [
-			"console.log('$1');",
-			"$2"
-		],
-		"description": "Log output to console"
-	}
-*/
-	"Prepare JS file": {
-		"prefix": "jsprep",
-		"body":[
-			"\"use strict\";",
+			"	render: function() {",
+			"		return (",
 			"",
-			"var React = require('react');",
+			"		);",
+			"	}",
+			"});",
 			"",
-			"module.exports = "
+			"module.exports = ${var_name};"
 		],
 		"description": "JS file init"
 	},
@@ -92,29 +70,16 @@
        	 	");"
 		],
 		"description": "Creates return funtion"
-	}
-}
-			"",
-			"module.exports = ${var_name};"
-		],
-		"description": "Create export variable definition"
 	},
-	"Function": {
-		"prefix": "func",
+	"initial State": {
+		"prefix": "initial state",
 		"body":[
-			"function () {",
-			"	",
-       	 	"}"
+			"getInitialState: function() {",
+			"	return {",
+			"		",
+			"	};",
+       	 	"},"
 		],
-		"description": "Creates empty function"
-	},
-	"Return": {
-		"prefix": "ret",
-		"body":[
-			"return (",
-			"	",
-       	 	");"
-		],
-		"description": "Creates return funtion"
+		"description": "getInitialState snippet"
 	}
 }
